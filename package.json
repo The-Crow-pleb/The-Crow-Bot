@@ -1,0 +1,32 @@
+{
+  "name": "the_crow_bot",
+  "version": "3.0.0",
+  "description": "bot do Corvo",
+  "main": "./src/bot.js",
+  "scripts": {
+    "start": "node ./src/bot.js",
+    "javalink": "java -jar Lavalink.jar",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Crow-pleb/The-Crow-Discord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/The-Crow-pleb/The-Crow-Discord/issues"
+  },
+  "homepage": "https://github.com/The-Crow-pleb/The-Crow-Discord#readme",
+  "keywords": [],
+  "author": "The Crow#0001 (Discord)/ Todos créditos pelo código à Anson (https://www.youtube.com/channel/UCvjXo25nY-WMCTEXZZb0xsw)",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.1.1",
+    "dotenv": "^8.2.0",
+    "erela.js": "^1.1.7",
+    "mongoose": "^5.9.5",
+    "table": "^5.4.6",
+    "weather-js": "^2.0.0"
+  }
+}
