@@ -3,7 +3,7 @@ module.exports = {
         const { MessageEmbed } = require('discord.js')
         const { guild } = message;
         if(message.author.bot) return;
-        if(message.content.toLowerCase().startsWith('c!kunumi')) {
+        if(message.content.toLowerCase().startsWith('c!lary')) {
           const args = message.content.split(' ');
           if(args.length > 1) {
             message.channel.send(`Tente Novamente!`);
