@@ -3,7 +3,7 @@ module.exports = {
       const { guild } = message
       const { discord } = require("discord.js");
       const { MessageEmbed } = require('discord.js')
-      const user = message.mentions.users.first();
+      const user = message.mentions.members.first();
   
       if (!message.member.hasPermission("MANAGE_ROLES")) {
           return message.channel.send(
@@ -46,6 +46,7 @@ module.exports = {
   
               }   
               if(mutedRole) {
+                  user.roles.remove(mutedRole)
                   const embed = new MessageEmbed()
                   .setTitle('Ação: Unmute')
                   .setDescription(`O usuário mencionado foi desmutado(a) com sucesso!`)
