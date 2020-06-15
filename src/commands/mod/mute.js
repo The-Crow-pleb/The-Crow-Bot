@@ -1,34 +1,61 @@
+const { description } = require("./ban");
+
 module.exports = {
-    run: async (client, message, args) => {
-      if (!message.member.hasPermission("MANAGE_ROLES")) {
+  run: async (client, message, args) => {
+    const { guild } = message
+    const { discord } = require("discord.js");
+    const { MessageEmbed } = require('discord.js')
+    const user = message.mentions.users.first();
+
+    if (!message.member.hasPermission("MANAGE_ROLES")) {
         return message.channel.send(
           "Desculpe, mas você não tem permissão para fazer isso."
         );
-      }
-      if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
-        return message.channel.send("Eu não tenho permissão para mutar alguém.");
-      }
-      const user = message.mentions.members.first();
-      if(!user) {
-        return message.channel.send("Por favor, mencione alguém que deseja mutar.")
-      }
-      if(user.id === message.author.id) {
-        return message.channel.send("Eu não vou te mutar -_-");
-      }
-      let muterole = message.guild.roles.cache.find(x => x.name === "Silenciado")
-        if(!muterole) {
-        return message.channel.send("Esse servidor não tem o cargo `Silenciado`, tente criar um com as permissões corretas!")
-      }
-      if(user.roles.cache.has(muterole)) {
-        return message.channel.send("Usuário já silenciado.")
-      }
-      user.roles.add(muterole)
-  await message.channel.send(`Você mutou **${message.mentions.users.first().username}**`)
-      
-      user.send(`Você foi mutado no  servidor: **${message.guild.name}**`)
-    },
-    aliases: ['mute'],
-    description: 'Muta um membro'
-  };
-  
-  
+    }
+    if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
+        return message.channel.send("Eu não tenho permissão para mutar alguém. Habilite a permissão 'Gerenciar Cargos' em meu cargo para que eu possa concluir o comando!");
+    }
+    if(!user) {
+        try {
+            const { MessageEmbed } = require('discord.js')
+            let mutedRole = message.guild.roles.cache.find(x => x.name === "Silenciado")
+            let memberId = message.content.substring(message.content.indexOf(' ') + 1)
+            let member = message.guild.members.cache.get(memberId);
+            if(!mutedRole) {
+                message.reply('Olá!\nParece que não há o cargo "Silenciado" neste servidor, tenha certeza de criar o mesmo e configurar os canais para de modo correto para o mute funcionar!')
+
+            }    
+            if(mutedRole) {
+                    member.roles.add(mutedRole)
+                    const embed = new MessageEmbed()
+                    .setTitle('Ação: Silenciamento')
+                    .setDescription(`O usuário indicado foi silenciado(a) com sucesso!`)
+                    .setColor('RANDOM')
+                    .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
+                    .setFooter(`Silenciamento realizado por: ${message.author.tag}`);
+                    message.channel.send(embed)
+            }
+        } catch (err) {
+                message.reply('ok')
+                console.log(err)
+        }
+    } else {
+        let mutedRole = message.guild.roles.cache.find(x => x.name === "Silenciado")
+        if(!mutedRole) {
+            message.reply('Olá!\nParece que não há o cargo "Silenciado" neste servidor, tenha certeza de criar o mesmo e configurar os canais para de modo correto para o mute funcionar!')
+
+        }
+        if(mutedRole) {
+            const embed = new MessageEmbed()
+            .setTitle('Ação: Silenciamento')
+            .setDescription(`O usuário mencionado foi silenciado(a) com sucesso!`)
+            .setColor('RANDOM')
+            .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
+            .setFooter(`Silenciamento realizado por: ${message.author.tag}`);
+            message.channel.send(embed)
+        }
+    }
+  },
+  aliases: [''],
+  description: ''
+}
