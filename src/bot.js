@@ -39,7 +39,7 @@ client.on('ready', () => {
             client.user.setActivity("Ich bin eine Krähe, was in aller Welt bist du? Ein Mensch?")
             activNum = 3;
         } else if (activNum === 3) {
-            client.user.setActivity(' "Quando percebi isso, eu voei para longe, e, pela primeira vez, minhas asas me traíram." ')
+            client.user.setActivity('Homens, nenhum deles consegue voar, por isso são tão limitados que ultrapassaram seus próprios limites, uma raça a se admirar, realmente.')
             activNum = 0;
         }  
     }, 300 * 1000);
