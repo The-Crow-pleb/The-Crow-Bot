@@ -5,7 +5,7 @@ module.exports = {
         if(message.author.bot) return;
         const { guild } = message
         const embed = new MessageEmbed()
-            .setDescription('Olá, [este](https://discordapp.com/oauth2/authorize?client_id=612773161485729822&scope=bot&permissions=818343039) é o convite que me fará entrar em seu servidor!')
+            .setDescription('Olá, [este](https://discord.com/oauth2/authorize?client_id=723187313643094037&scope=bot&permissions=1892084862) é o convite que me fará entrar em seu servidor!')
             .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
             .setColor('RANDOM')
             .setThumbnail('https://i.gifer.com/H0bB.gif')
