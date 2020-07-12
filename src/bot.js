@@ -26,20 +26,20 @@ client.on('ready', () => {
     console.log(`${client.user.username} bateu suas asas!`)
     console.log(table(commandStatus))
 
-    client.user.setActivity("Praise The Sun!", {type: 'PLAYING'});
+    client.user.setActivity("The feeling of Tocka inside me needs to get killed...", {type: 'PLAYING'});
     let activNum = 0;
     setInterval(function() {
         if(activNum === 0) {
-            client.user.setActivity("Você já viu um corvo branco? Eu nunca!")
+            client.user.setActivity("Mein Kampfwille wird niemals sterben! Du musst dich an meine ewige Gegenwart gewöhnen.")
             activNum = 1;
         } else if (activNum === 1) {
-            client.user.setActivity("Corvos brancos são apenas pombos!!")
+            client.user.setActivity("Ich liebe dich immer noch, aber ich bin nicht mehr da, es tut mir leid.")
             activNum = 2;
         } else if (activNum === 2) {
             client.user.setActivity("Ich bin eine Krähe, was in aller Welt bist du? Ein Mensch?")
             activNum = 3;
         } else if (activNum === 3) {
-            client.user.setActivity('Homens, nenhum deles consegue voar, por isso são tão limitados que ultrapassaram seus próprios limites, uma raça a se admirar, realmente.')
+            client.user.setActivity('Das Gefühl von Tocka wird niemals in mir sterben ...')
             activNum = 0;
         }  
     }, 300 * 1000);
