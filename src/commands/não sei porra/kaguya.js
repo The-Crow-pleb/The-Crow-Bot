@@ -9,10 +9,10 @@ module.exports = {
             message.channel.send(`Tente Novamente!`);
         } else if(args.length === 1) {
             const embed = new MessageEmbed()
-            .setTitle('Kaguya-Sama uwu')
+            .setTitle('Kaguya-Sama')
             .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
-            .setImage("https://i.pinimg.com/originals/99/11/47/991147d84b1097e2bc7e79ef0e5d780b.gif")
-            .addField("Fofamente fofa", 'Eu te peço desculpas. Mas a morte ainda não está ao seu favor, eu sou companheiro dela, posso dizer isso.\nVocê tem de aproveitar mais.\nNão se esquece do seu remédio, por favor!')
+            .setImage("https://i.pinimg.com/originals/9a/51/d8/9a51d8400ddf936328a4fcabb0129c7f.gif")
+            .addField("Fofamente fofa", 'Você o acompanhou até o momento, eu agradeço, Kaguya, você é a melhor pessoa que eu conheci neste lugar nojento e hostil, a mais pura e provavelmente a mais inocente. Cuide dele por mim, as asas dele ainda não brilham, elas ainda não estão na sua última forma, e não se desespere, a hora que elas se tornarão mais majestosas que quaisquer asas.\nE você também, brilhe do modo que você merece brilhar, permita-se brilhar, não se segure, você consegue.')
             .setColor('RANDOM')
             message.channel.send(embed);
         }
