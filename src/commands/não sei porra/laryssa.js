@@ -12,7 +12,7 @@ module.exports = {
             .setTitle('Hey, espero que veja..')
             .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
             .setImage("https://i.pinimg.com/originals/a6/38/75/a6387520015390ddb9bb10ac97cd6538.gif")
-            .addField("“O amor e o ódio não são cegos, mas estão cegados pelo fogo que carregam dentro.”", 'Eu não sei o que falar, você foi maravilhosa, eu amei todos os momentos que passei ao seu lado, e sabe, apesar de tudo aquilo, eu não consegui te odiar por nenhum momento, não consegui falar mal de você, não consegui esquecer quem você foi pra mim.\nO meu amor por você é feito de fogo grego, uma chama que não se apaga facilmente, mesmo com tantas coisas que já aconteceram para se apagar, ele não apaga, de modo algum. Me desculpe.')
+            .addField("“O amor e o ódio não são cegos, mas estão cegados pelo fogo que carregam dentro.”", 'Eu te prometo, quando eu te encontrar novamente, eu irei me desculpar e lhe mostrar o quanto minhas asas podem crescer, eu te prometo, de sangue, no dia em que nos vermos, você verá o quão grandioso pode ser o KönigKrähe\nNós nos veremos.')
             .setColor('RANDOM')
             message.channel.send(embed);
         }
