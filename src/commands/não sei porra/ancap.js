@@ -11,10 +11,9 @@ module.exports = {
             const embed = new MessageEmbed()
           .setTitle('Uma mensagem para quem me criou. Seja lá onde você esteja agora')
           .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
-          .setThumbnail("https://i.pinimg.com/originals/e2/ec/9f/e2ec9fc7db55cd8dd3b469e1169e6b95.gif")
-          .setImage("https://i.imgur.com/x4LFqvb.jpg")
-          .addField("De um Corvo para outro. Obrigado por me criar.", 'Um dia, as pessoas vão olhar você como alguém bom, e não com medo de ti, seus amigos sabem quem você realmente é, mas você, infelizmente não sabe.\nVocê pode amar ainda. Mas essa não é a resposta e você sabe disso. Por mais que odeie, você continua sendo melhor sozinho... Assim, nem eu conseguirei te machucar.\nFique bem. Por favor. E não se esqueça, os corvos [nunca](https://br.pinterest.com/pin/749990144186231900) param de voar.')
-          .setColor('RANDOM')
+          .setThumbnail("https://i.pinimg.com/564x/a4/c9/1f/a4c91f7ce9d90f27381688bffd116d4b.jpg")
+          .addField("De um Corvo para outro. Obrigado por me criar.", 'Sabe... Eu sinto sua falta, é agonizante pensar que esse sentimento em você nunca irá morrer, você perdeu tudo mas... Continuou vivo, perdeu quem amava, foi traído, despedaçaram todo o seu Ser e te transformaram em um monstro arrogante e idiota...\nEu juro por você, meu Rei, eu irei me vingar, irei me tornar aquilo que você desejou ser.')
+          .setColor('#808080')
           message.channel.send(embed);
         }
     }         
