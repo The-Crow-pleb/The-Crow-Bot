@@ -12,7 +12,7 @@ module.exports = {
             .setTitle('Hey-o Nicoras')
             .setAuthor(`${guild.name}`, guild.iconURL({ dynamic: true }))
             .setImage("https://i.pinimg.com/originals/01/80/61/018061c4115995fa9a896cfb107a512a.gif")
-            .addField("PRET FEDID", 'Saca, você foi uma das primeiras pessoas que meu criador conheceu por aqui, sua amizade com ele durou por esse ano (Sim, ANO) e provavelmente chegue a durar mais, você é valioso para ele, sabia? Apesar de toda a merda, ele nunca sairá de perto, tenha certeza disso, conte com a minha e a ajuda dele!')
+            .addField("Aliás, você é a encarnação do Deus das Sombras?", 'Saca, você foi uma das primeiras pessoas que meu criador conheceu por aqui, sua amizade com ele durou por esse ano (Sim, ANO) e provavelmente chegue a durar mais, você é valioso para ele, sabia? Apesar de toda a merda, ele nunca sairá de perto, tenha certeza disso, conte com a minha e a ajuda dele!')
             .setColor('RANDOM')
             message.channel.send(embed);
         }
