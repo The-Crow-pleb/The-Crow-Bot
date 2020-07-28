@@ -1,3 +1,7 @@
-Olá, caso esteja lendo isso, você ou deve ter invadido esse lugar (Se for o caso, peço gentilmente para não arruinar o projeto) ou então deve ser privilegiado o suficiente para ver as configurações e códigos que eu tenho dentro de mim. Parabéns, de qualquer modo.
+Olá, caso você tenha chegado até aqui, seja bem vindo!
+Não há muito sobre falar, meu bot é bem simples e... eu devo dizer, um pouco bagunçado, me desculpe por isso.
+Não há muitas funcionalidades nele, por isso, me desculpem!
 
-Não tenho mais nada a falar. Apenas não se esqueça, Corvos nunca param de voar.
+Hello and Welcome.
+There's not much to talk about this bot, it is a simple bot, and a quite messy one.
+It doenst have that much to do with it, sorry.
