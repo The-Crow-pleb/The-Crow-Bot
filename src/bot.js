@@ -30,16 +30,16 @@ client.on('ready', () => {
     let activNum = 0;
     setInterval(function() {
         if(activNum === 0) {
-            client.user.setActivity("Mein Kampfwille wird niemals sterben! Du musst dich an meine ewige Gegenwart gewöhnen.")
+            client.user.setActivity("Sobre as borboletas, Sr. Corvo, é que elas precisam ser admiradas de longe.")
             activNum = 1;
         } else if (activNum === 1) {
-            client.user.setActivity("Ich liebe dich immer noch, aber ich bin nicht mehr da, es tut mir leid.")
+            client.user.setActivity("Se as pessoas que amamos são roubadas de nós, o modo de fazê-las viver é nunca parar de amar elas. Construções queimam, pessoas morrem, mas amor verdadeiro, é para sempre.")
             activNum = 2;
         } else if (activNum === 2) {
-            client.user.setActivity("Ich bin eine Krähe, was in aller Welt bist du? Ein Mensch?")
+            client.user.setActivity("Eu devo dizer, Sr. Corvo, você chegou mais longe do que suas asas aguentam, e eu te admiro por isso.")
             activNum = 3;
         } else if (activNum === 3) {
-            client.user.setActivity('Das Gefühl von Tocka wird niemals in mir sterben ...')
+            client.user.setActivity('E a melhor de todas as fotos nunca foi tirada, ela não está na memória da câmera, mas isso não significa que ela não esteja na memória; sonhar é bom, mas viver é ainda melhor. Aprecie, sinta o gosto, passa rápido.')
             activNum = 0;
         }  
     }, 300 * 1000);
