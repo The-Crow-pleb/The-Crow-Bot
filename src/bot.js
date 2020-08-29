@@ -26,23 +26,23 @@ client.on('ready', () => {
     console.log(`${client.user.username} bateu suas asas!`)
     console.log(table(commandStatus))
 
-    client.user.setActivity("Gott Mit Uns", {type: 'PLAYING'});
-    let activNum = 0;
-    setInterval(function() {
-        if(activNum === 0) {
-            client.user.setActivity("Sobre as borboletas, Sr. Corvo, é que elas precisam ser admiradas de longe.")
-            activNum = 1;
-        } else if (activNum === 1) {
-            client.user.setActivity("Se as pessoas que amamos são roubadas de nós, o modo de fazê-las viver é nunca parar de amar elas. Construções queimam, pessoas morrem, mas amor verdadeiro, é para sempre.")
-            activNum = 2;
-        } else if (activNum === 2) {
-            client.user.setActivity("Gott ist tot.")
-            activNum = 3;
-        } else if (activNum === 3) {
-            client.user.setActivity('E a melhor de todas as fotos nunca foi tirada, ela não está na memória da câmera, mas isso não significa que ela não esteja na memória; sonhar é bom, mas viver é ainda melhor. Aprecie, sinta o gosto, passa rápido.')
-            activNum = 0;
-        }  
-    }, 300 * 1000);
+    client.user.setActivity("Digam Adeus, pois o Corvo morreu! Sairei de funcionamento no próximo mês, mas ainda terei meu repositório no github!", {type: 'PLAYING'});
+//     let activNum = 0;
+//     setInterval(function() {
+//         if(activNum === 0) {
+//             client.user.setActivity("Sobre as borboletas, Sr. Corvo, é que elas precisam ser admiradas de longe.")
+//             activNum = 1;
+//         } else if (activNum === 1) {
+//             client.user.setActivity("Se as pessoas que amamos são roubadas de nós, o modo de fazê-las viver é nunca parar de amar elas. Construções queimam, pessoas morrem, mas amor verdadeiro, é para sempre.")
+//             activNum = 2;
+//         } else if (activNum === 2) {
+//             client.user.setActivity("Gott ist tot.")
+//             activNum = 3;
+//         } else if (activNum === 3) {
+//             client.user.setActivity('E a melhor de todas as fotos nunca foi tirada, ela não está na memória da câmera, mas isso não significa que ela não esteja na memória; sonhar é bom, mas viver é ainda melhor. Aprecie, sinta o gosto, passa rápido.')
+//             activNum = 0;
+//         }  
+//     }, 300 * 1000);
     
 })
 
